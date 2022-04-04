@@ -59,7 +59,9 @@ nav #icon{
     line-height: 80px;
     float: right;
     margin-right: 40px;
+    margin-right: 40px;
     cursor: pointer;
+    display: none;
 
 }
 
@@ -83,14 +85,38 @@ nav #icon{
     nav ul{
         position: fixed;
         width: 100%;
-        height: 100px;
+        height: 100vh;
         background: #2f3640;
         top: 80px;
-        left: 0;
+        left: -100%;
         text-align: center;
+        transition: all .5s
         
     }
-    nav a{
-        font-size: 17px;
+
+    nav li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
     }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    a.active, a:hover{
+        border: none;
+        color: #3498db;
+
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+}
+
+section{
+    background: url(img/thumb-1920-1156488.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
 }

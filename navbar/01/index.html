@@ -9,12 +9,23 @@
     
     <!--Script-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
     <title>Nav Bar Responsive</title>
 
 </head>
 <body>
     <nav>
-        <label class="logo"> Design</label>
+        <label class="logo">Nav Bar 01</label>
         <ul>
             <li>
                 <a class="active" href="#"> Home</a>
@@ -36,6 +47,10 @@
             <i class="fas fa-bars"></i>
         </label>
     </nav>
+
+    <section>
+        
+    </section>
     
 </body>
 </html>
